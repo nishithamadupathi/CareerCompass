@@ -1,0 +1,22 @@
+{
+  "name": "careercompass",
+  "version": "1.0.0",
+  "description": "Hackathon MVP for university student career path discovery, skill gap analysis, and 12-week roadmaps",
+  "main": "index.html",
+  "scripts": {
+    "start": "python run.py",
+    "dev": "python run.py",
+    "serve": "python -m http.server 3000",
+    "test": "python verify_app.py"
+  },
+  "keywords": [
+    "career",
+    "roadmap",
+    "skill-gap",
+    "student",
+    "react",
+    "hackathon"
+  ],
+  "author": "CareerCompass Team",
+  "license": "MIT"
+}

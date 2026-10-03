@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CareerCompass - University student career discovery, skill gap analyzer, and 12-week guided roadmap.">
+  <title>CareerCompass - Career Discovery & Skill Gap Roadmap for Students</title>
+  
+  <!-- Modern Clean Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- React Mount Point -->
+  <div id="root">
+    <div style="min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #f8fafc; color: #475569;">
+      <div style="text-align: center; padding: 2rem;">
+        <div style="width: 48px; height: 48px; border: 3px solid #e2e8f0; border-top-color: #4f46e5; border-radius: 50%; margin: 0 auto 1.5rem; animation: spin 0.8s linear infinite;"></div>
+        <h2 style="font-size: 1.25rem; font-weight: 700; color: #1e1b4b; margin-bottom: 0.5rem;">Loading CareerCompass...</h2>
+        <p style="font-size: 0.9rem; color: #64748b;">Initializing student career engine & offline roadmaps</p>
+      </div>
+      <style>
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+      </style>
+    </div>
+  </div>
+
+  <noscript>
+    <div style="padding: 2rem; text-align: center; font-family: sans-serif; color: #dc2626;">
+      JavaScript is required to run CareerCompass. Please enable JavaScript in your browser.
+    </div>
+  </noscript>
+
+  <!-- Local Offline React 18 & Babel Libraries -->
+  <script src="vendor/react.production.min.js"></script>
+  <script src="vendor/react-dom.production.min.js"></script>
+  <script src="vendor/babel.min.js"></script>
+
+  <!-- Static Local Career, Roadmap & Skills Datasets -->
+  <script src="js/data/skills.js"></script>
+  <script src="js/data/careers.js"></script>
+  <script src="js/data/roadmaps.js"></script>
+
+  <!-- Main React Application -->
+  <script type="text/babel" src="js/app.js"></script>
+</body>
+</html>
